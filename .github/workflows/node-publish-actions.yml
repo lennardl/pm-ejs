@@ -23,6 +23,8 @@ jobs:
 
               # Now we have got the access of EC2 and we will start the deploy .
               cd /home/ubuntu/pm-ejs
+              which npm && echo "npm exist" || sudo apt-get install -y npm
+              which git && echo "git exist" || sudo apt-get install -y git
               git checkout main 
               git fetch --all 
               git reset --hard origin/main 
@@ -30,5 +32,4 @@ jobs:
               sudo npm i 
               sudo pm2 stop server.js
               sudo pm2 start server.js
-              which npm && echo "npm exist" || sudo apt-get install npm
               '
