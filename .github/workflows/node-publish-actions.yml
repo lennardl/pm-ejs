@@ -25,6 +25,7 @@ jobs:
               cd /home/ubuntu/pm-ejs
               which npm && echo "npm exist" || sudo apt-get install -y npm
               which git && echo "git exist" || sudo apt-get install -y git
+              which pm2 && echo "pm2 exist" || sudo apt-get install -y pm2
               git checkout main 
               git fetch --all 
               git reset --hard origin/main 
