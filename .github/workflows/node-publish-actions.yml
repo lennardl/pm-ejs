@@ -28,7 +28,7 @@ jobs:
               git reset --hard origin/main 
               git pull origin main 
               sudo npm i 
-              sudo npm run build 
+              sudo npm start
               sudo pm2 stop ./dist/index.js 
               sudo pm2 start ./dist/index.js
               '
