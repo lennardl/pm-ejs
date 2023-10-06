@@ -23,12 +23,12 @@ jobs:
 
               # Now we have got the access of EC2 and we will start the deploy .
               cd /home/ubuntu/pmejs
-              git checkout dev &&
-              git fetch --all &&
-              git reset --hard origin/dev &&
-              git pull origin dev &&
-              sudo npm i &&
-              sudo npm run build &&
-              sudo pm2 stop ./dist/index.js &&
+              git checkout dev 
+              git fetch --all 
+              git reset --hard origin/dev 
+              git pull origin dev 
+              sudo npm i 
+              sudo npm run build 
+              sudo pm2 stop ./dist/index.js 
               sudo pm2 start ./dist/index.js
               '
