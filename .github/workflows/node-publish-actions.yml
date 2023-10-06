@@ -23,7 +23,7 @@ jobs:
 
               # Now we have got the access of EC2 and we will start the deploy .
               cd /home/ubuntu/pmejs
-              git checkout dev 
+              git checkout main 
               git fetch --all 
               git reset --hard origin/dev 
               git pull origin dev 
