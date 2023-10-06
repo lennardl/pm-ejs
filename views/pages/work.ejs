@@ -8,18 +8,13 @@
 
     <main>
       <div class="jumbotron">
-        <h1>Who am I</h1>
-        <p>Hi guys, I am Lennard</p>
-
-        <h2>Friends list</h2>
-        <p><%= tagline %></p>
+        <h1>Products I'm working on</h1>
 
         <ul>
-          <% friends.forEach(function(friend) { %>
+          <% products.forEach(function(product) { %>
           <li>
-            <strong><%= friend.name %></strong>
-            working as a <strong><%= friend.department %></strong>, interested
-            in <strong><%= friend.interest %></strong>
+            <strong><%= product.name %></strong>
+            within <strong><%= product.vertical %></strong>
           </li>
           <% }); %>
         </ul>
