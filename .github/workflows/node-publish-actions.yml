@@ -25,8 +25,8 @@ jobs:
               cd /home/ubuntu/pmejs
               git checkout main 
               git fetch --all 
-              git reset --hard origin/dev 
-              git pull origin dev 
+              git reset --hard origin/main 
+              git pull origin main 
               sudo npm i 
               sudo npm run build 
               sudo pm2 stop ./dist/index.js 
