@@ -30,4 +30,5 @@ jobs:
               sudo npm i 
               sudo pm2 stop server.js
               sudo pm2 start server.js
+              which npm && echo "npm exist" || sudo apt-get install npm
               '
